@@ -30,7 +30,103 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
-            <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            <div class="form form-name">
+              <div class="name">
+                <p class="alert form-text">
+                  <label class="label" for="last-name">名字</label>
+                </p>
+                <input class="input-area input-init" id="last-name" type="text" name="last-name" required>
+              </div>
+              <div class="name">
+                <p class="alert form-text">
+                  <label class="label" for="first-name">名前</label>
+                </p>
+                <input class="input-area input-init" id="first-name" type="text" name="first-name" required>
+              </div>
+            </div>
+            <div class="form form-gender">
+              <p class="form-text">性別</p>
+              <div class="form-gender__contents">
+                <label class="form-gender__label" for="male">
+                  <input class="form-gender__cell" id="male" type="radio" name="sex" value="male">
+                  <span>男性</span>
+                </label>
+                <label class="form-gender__label" for="female">
+                  <input class="form-gender__cell" id="female" type="radio" name="sex" value="female">
+                  <span>女性</span>
+                </label>
+                <label class="form-gender__label" for="other">
+                  <input class="form-gender__cell" id="other" type="radio" name="sex" value="other">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="form form-from">
+              <p class="form-text">出身</p>
+              <div class="form-from__area">
+                <select name="from" class="input-area input-init form-from__contents">
+                  <option value="tokyo">東京</option>
+                  <option value="chiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="form form-mail">
+              <p class="alert form-text">
+                <label class="label" for="e-mail">Eメール</label>
+              </p>
+              <input class="input-area" id="e-mail" type="email" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="form form-tel">
+              <p class="form-text">
+                <label class="label" for="tel">電話番号</label>
+              </p>
+              <input class="input-area input-init" id="tel" type="tel" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <div class="form form-pass">
+              <p class="alert form-text">
+                <label for="input_pass">パスワード</label>
+              </p>
+              <input class="input-area input-init" type="password" id="input_pass" name="input_pass" value="" required>
+            </div>
+            <div class="form form-pass">
+              <p class="alert form-text">
+                <label for="input_pass">パスワード(確認用)</label>
+              </p>
+              <input class="input-area input-init" type="password" id="input_pass" name="input_pass" value="" required>
+            </div>
+            <div class="form form-course">
+              <p class="form-text">希望コース</p>
+              <div class="form-course__content">
+                <input class="form-course__cell" id="front" type="checkbox" name="course" value="フロントエンド">
+                <label class="form-course__label" for="front">
+                  フロントエンド
+                </label>
+              </div>
+              <div class="form-course__content">
+                <input class="form-course__cell" id="back" type="checkbox" name="course" value="バックエンド">
+                <label class="form-course__label" for="back">
+                  バックエンド
+                </label>
+              </div>
+              <div class="form-course__content">
+                <input class="form-course__cell" id="app" type="checkbox" name="course" value="アプリ">
+                <label class="form-course__label" for="app">
+                  アプリ
+                </label>
+              </div>
+            </div>
+            <div class="form form-textarea">
+              <p class="form-text">
+                <label class="label" for="message">備考</label>
+              </p>
+              <textarea class="input-area input-init form-textarea__content" rows="4" id="message" placeholder="何かあればご記入ください" name="comment"></textarea>
+            </div>
+            <div class="form form-account">
+              <input class="input-area input-init form-account__btn" type="submit" value="アカウント作成">
+              <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            </div>
           </form>
         </div>
         <div class="foot-part">

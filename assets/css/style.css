@@ -131,6 +131,204 @@
   margin-top: 20px;
 }
 
+/* ----ここから---- */
+.form {
+  margin-top: 20px;
+}
+
+.form-name {
+  display: flex;
+}
+
+.name {
+  margin-left: 15px;
+  width: 50%;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+.alert::after {
+  content: "※";
+  color: #dd4b39
+}
+
+.input-area {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+  border-radius: 3px;
+  padding: 5px;
+  color: #545658;
+}
+
+.input-init {
+  appearance: none;
+  outline: none;
+  resize: none;
+}
+
+.form-gender__cell, .form-course__cell {
+  display: none;
+}
+
+.input-area:focus {
+  background-color: #fff;
+}
+
+.form-text {
+  font-size: 13px;
+  color: #545658;
+}
+
+.form-gender__contents {
+  display: flex;
+  margin-top: 5px;
+  color: #545658;
+}
+
+.form-gender__cell {
+  margin-left: 13px;
+}
+
+.form-gender__cell:checked {
+  color: #ee82ee;
+}
+
+.form-gender__label {
+  margin-left: 15px;
+}
+
+.form-gender__label:first-child {
+  margin-left: 0;
+}
+
+.form-gender__label span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.form-gender__label span::before {
+  content: "";
+  position: absolute;
+  left:  0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.form-gender__cell:checked + span::after {
+  content: "";
+  position: absolute;
+  left:  4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  background-color: #01bfdb;
+  border-radius: 50%;
+}
+
+.form-from {
+  width: 50%;
+}
+
+.form-from__contents {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.form-from__area {
+  position: relative;
+  margin-top: 5px;
+}
+
+.form-from__area::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right:  10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.form-course__label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.form-course__content {
+  margin-top: 10px;
+  color: #545658;
+}
+
+.form-course__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d9d9d9;
+  margin-top: -8px;
+}
+
+.form-course__cell:checked + .form-course__label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  margin-top: -12px;
+}
+
+.form-textarea {
+  width: 100%;
+}
+
+.form-textarea__content {
+  width: 100%;
+  height: 100px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.form-account__btn {
+  height: 50px;
+  color: #fff;
+  background-color: #20b2aa;
+  opacity: .8;
+  transition: .3s;
+}
+
+.form-account__btn:active {
+  color: #48d1cc;
+  background-color: #fff;
+}
+
+.form-account__btn:hover {
+  opacity: 1;
+}
+
+
 /*--- 利用規約 ---*/
 .agreement {
   font-size: 12px;
